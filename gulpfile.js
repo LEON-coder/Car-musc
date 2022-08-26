@@ -22,19 +22,19 @@ return del(pattern, './');
 
 
 
-function compilePug(cb) {
-    src("./src/pug/pages/*.pug")
+function compilePug() {
+   return gulp.src("./src/pug/**/*.pug")
     .pipe(pug({
             pretty:true
         }))
-    .pipe(dest('./app'));
-    cb();
+    .pipe(gulp.dest('./app/'));
+    
 }
 
 
 
 function CSScompiling() {
-    return gulp.src("./src/scss/**/*.scss")
+    return gulp.src("src/scss/**/*.scss")
     .pipe(plumber())  
      .pipe(cleanCSS())
     .pipe(sourcemaps.init())
@@ -43,7 +43,7 @@ function CSScompiling() {
     .pipe(browserSync.stream())
     .pipe(plumber.stop())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('app'));
 }
 
 
@@ -54,14 +54,14 @@ function CSScompiling() {
     })) 
     .pipe(uglify())
     .pipe(browserSync.stream())
-    .pipe(gulp.dest('./app/js'));
+    .pipe(gulp.dest('app/js'));
 } 
 
 
 function liveserver() {
     browserSync.init({
         server: {
-            baseDir: "./app"
+            baseDir: "app"
         }
     });
 }
@@ -86,7 +86,7 @@ function liveserver() {
 			parserOptions: {xmlMode: true}
 		}))
 			.pipe(replace('&gt;', '>'))
-			.pipe(gulp.dest('./img/sprites/'));
+			.pipe(gulp.dest('/app/img/sprites/'));
 }
 
 
@@ -94,14 +94,14 @@ function liveserver() {
 function watcher() {
     browserSync.init({
         server: {
-            baseDir: "./app"
+            baseDir: "app"
         }
     });
-    gulp.watch('src/pug/**/*.pug', pugToHtml);
+    gulp.watch('src/pug/**/*.pug', compilePug);
     gulp.watch('src/js/main.js', script);
-    gulp.watch('src/scss/**/*scss', CSScompiling);
+    gulp.watch('src/scss/**/*scss', CSScompiling , browserSync.reload);
     gulp.watch('app/*.html').on('change', browserSync.reload);
-    gulp.watch('src/images/**/*.{jpg,png,gif,svg}', imageCompressing);
+    gulp.watch('src/img/**/*.{jpg,png,gif,svg}', imageCompressing);
     gulp.watch('src/js', script);
   }
 
@@ -121,8 +121,7 @@ function imageCompressing() {
             ]
         })
     ]))
-    .pipe(gulp.dest('./app/img'));
+    .pipe(gulp.dest('app/img'));
 }
 
-exports.pug = compilePug;
 exports.default = gulp.parallel(compilePug, CSScompiling, script, watcher, imageCompressing, svgSpriteBuild);
