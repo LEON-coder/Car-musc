@@ -6,7 +6,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const del = require('del');
 const { stream } = require("browser-sync");
 const browserSync = require('browser-sync').create();
 const imagemin = require("gulp-imagemin");
@@ -16,9 +15,7 @@ const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 const sourcemaps = require('gulp-sourcemaps');
 
-function clean() {
-return del(pattern, './');
-}
+
 
 
 
@@ -27,7 +24,7 @@ function compilePug() {
     .pipe(pug({
             pretty:true
         }))
-    .pipe(gulp.dest('./app/'));
+    .pipe(gulp.dest('./app'));
     
 }
 
