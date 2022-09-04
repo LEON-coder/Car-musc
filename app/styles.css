@@ -99,6 +99,7 @@ nav {
   transition: background-size 0.5s, color 0.5s;
   margin-top: 40px;
   z-index: 3;
+  text-decoration: none;
 }
 
 .header__link:before {

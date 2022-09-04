@@ -9,10 +9,6 @@ const uglify = require('gulp-uglify');
 const { stream } = require("browser-sync");
 const browserSync = require('browser-sync').create();
 const imagemin = require("gulp-imagemin");
-const svgSprite = require('gulp-svg-sprite');
-const svgmin = require('gulp-svgmin');
-const cheerio = require('gulp-cheerio');
-const replace = require('gulp-replace');
 const sourcemaps = require('gulp-sourcemaps');
 
 
@@ -24,23 +20,23 @@ function compilePug() {
     .pipe(pug({
             pretty:true
         }))
-    .pipe(gulp.dest('./app'));
-    
+    .pipe(gulp.dest('./app'))
+    .pipe(browserSync.stream());     
 }
 
 
 
 function CSScompiling() {
-    return gulp.src("src/scss/**/*.scss")
-    .pipe(plumber())  
-     .pipe(cleanCSS())
+    return gulp.src("./src/scss/**/*.scss")
+    .pipe(cleanCSS())
+    .pipe(plumber())    
     .pipe(sourcemaps.init())
     .pipe(sass({pretty: true}).on("error", sass.logError))
-     .pipe(autoprefixer())
-    .pipe(browserSync.stream())
+    .pipe(autoprefixer())    
     .pipe(plumber.stop())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('app'));
+    .pipe(gulp.dest('app/css')) 
+    .pipe(browserSync.stream());  
 }
 
 
@@ -58,45 +54,20 @@ function CSScompiling() {
 function liveserver() {
     browserSync.init({
         server: {
-            baseDir: "app"
+            baseDir: "./app"
         }
     });
 }
-
-
-
- function svgSpriteBuild() {
-	return gulp.src("src/img/sprites/")
-	// minify svg
-		.pipe(svgmin({
-			js2svg: {
-				pretty: true
-			}
-		}))
-		
-		.pipe(cheerio({
-			run: function ($) {
-				$('[fill]').removeAttr('fill');
-				$('[stroke]').removeAttr('stroke');
-				$('[style]').removeAttr('style');
-			},
-			parserOptions: {xmlMode: true}
-		}))
-			.pipe(replace('&gt;', '>'))
-			.pipe(gulp.dest('/app/img/sprites/'));
-}
-
-
 
 function watcher() {
     browserSync.init({
         server: {
-            baseDir: "app"
+            baseDir: "./app"
         }
     });
     gulp.watch('src/pug/**/*.pug', compilePug);
     gulp.watch('src/js/main.js', script);
-    gulp.watch('src/scss/**/*scss', CSScompiling , browserSync.reload);
+    gulp.watch('src/scss/**/*scss', CSScompiling);
     gulp.watch('app/*.html').on('change', browserSync.reload);
     gulp.watch('src/img/**/*.{jpg,png,gif,svg}', imageCompressing);
     gulp.watch('src/js', script);
@@ -121,4 +92,4 @@ function imageCompressing() {
     .pipe(gulp.dest('app/img'));
 }
 
-exports.default = gulp.parallel(compilePug, CSScompiling, script, watcher, imageCompressing, svgSpriteBuild);
+exports.default = gulp.parallel(compilePug, CSScompiling, script, watcher, imageCompressing);

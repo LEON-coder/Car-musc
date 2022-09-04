@@ -30,5 +30,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LEON-coder/Car-musc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LEON-coder/Car-musc/issues"
+  },
+  "homepage": "https://github.com/LEON-coder/Car-musc#readme",
   "description": ""
 }
