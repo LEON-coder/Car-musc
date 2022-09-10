@@ -18,8 +18,10 @@
 }
 
 body {
-  background-color: #1e1e1e;
+  width: 100%;
+  background-color: #141414;
   box-sizing: border-box;
+  height: auto;
 }
 
 
@@ -170,14 +172,13 @@ nav {
   width: 640px;
   align-items: center;
   height: 100%;
-  justify-content: center;
-  border: 1px solid #898989;
+  border-left: 1px solid #898989;
+  border-right: 1px solid #898989;
 }
 
-.address {
-  width: 62px;
+.header__info {
   height: 25px;
-  font-family: ReformaGroteskDemiC;
+  font-family: 'ReformaGroteskDemiC';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -185,7 +186,9 @@ nav {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFFFFF;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .header__address_area {
@@ -200,6 +203,7 @@ nav {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #db3138;
+  margin-bottom: 51px;
 }
 
 .header__phone_area {
@@ -214,33 +218,7 @@ nav {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #db3138;
-}
-
-.phone {
-  width: 62px;
-  height: 25px;
-  font-family: ReformaGroteskDemiC;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.operating-mode {
-  height: 25px;
-  font-family: ReformaGroteskDemiC;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #fff;
+  margin-bottom: 51px;
 }
 
 .operating-mode__area {
@@ -257,6 +235,7 @@ nav {
   color: #db3138;
   display: flex;
   flex-direction: column;
+  margin-bottom: 51px;
 }
 
 .achievements {
@@ -839,6 +818,8 @@ nav {
   background-color: #141414;
 }
 
+
+
 .our_works__header {
   width: 636px;
   font-family: ReformaGroteskDemiC;
@@ -865,6 +846,7 @@ nav {
 .our_works__pictures {
   display: flex;
   margin-top: 60px;
+  width: 100%;
 }
 
 .margin--zero {
@@ -873,9 +855,9 @@ nav {
 
 .our_works__img {
   display: flex;
-  width: 100%;
+  width: 310px;
+  max-width: 100%;
 }
-
 
 .contacts {
   display: flex;
@@ -1208,10 +1190,36 @@ footer {
   flex-grow: 0;
 }
 
-
+@media screen and (max-width: 2560px) {
+  .our_works__img {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+}
 
 
 @media screen and (max-width: 1440px) {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 40px;
+}
+
+.nav__list {
+  color: #fff;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 40px;
+  height: 29px;
+  margin-top: 40px;
+  margin-left: 312px;
+}
 
   .our_works__pictures {
       display: flex;
@@ -1229,7 +1237,6 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
-
   nav {
     display: flex;
     flex-direction: row;
@@ -1238,6 +1245,18 @@ footer {
     width: auto;
 }
 
+.nav__list {
+  color: #fff;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 40px;
+  height: 29px;
+  margin-top: 40px;
+  margin-left: 0;
+}
 
   .achievements__block-awards {
       display: flex;
@@ -1339,6 +1358,119 @@ margin-right:0;
     margin-top: 40px;
 }
 
+.price_full-cover-car__table {
+  display: flex;
+  width: 100%;
+  height: 856px;
+  margin-top: 60px;
+  background-color: #141414;
+}
+
+.table {
+  display: flex;
+  border: 1px solid #898989;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.table-body-style {
+  display: flex;
+  width: 100%;
+  border: 1px solid #898989;
+  align-items: center;
+  height: 118px;
+}
+
+.table-style-header {
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  height: 34px;
+  width: auto;
+}
+
+.cell-style-brand {
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  width: auto;
+  margin-left: 50px;
+}
+
+.margin-first {
+  margin-left: 120px;
+}
+
+.cell-style {
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.6;
+  margin-left: auto;
+}
+
+.table-style-header {
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  height: 34px;
+  width: auto;
+  margin-right: auto;
+}
+
+.price_full-cover-car__table {
+  display: flex;
+  width: 100%;
+  height: 856px;
+  margin-top: 60px;
+  background-color: #141414;
+}
+
+.table > tbody {
+  display: flex;
+}
+
 .advetrisements_tunung__guaranties_slider {
   display: flex;
   height: 660px;
@@ -1416,6 +1548,19 @@ margin-right:0;
     align-items: center;
 }
 
+.header__info {  
+  height: 25px; 
+  font-family: 'ReformaGroteskDemiC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;  
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;  
+  color: #FFFFFF;
+}
+
   nav {
     display: flex;
     flex-direction: row;
@@ -1423,11 +1568,54 @@ margin-right:0;
     gap: 40px;
 }
 
+.header__address_area {
+  width: auto;
+  height: auto;
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+}
+
+.header__phone_area {
+  width: auto;
+  height: auto;
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+}
+
+.header__contacts {
+  display: flex;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+}
+
+.header__contacts-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;  
+}
+
 .achievements__block-awards {
   display: flex;
   width: 100%;
   height: auto;
-  margin-top: 620px;
+  margin-top: 100px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -1817,6 +2005,12 @@ margin-top:40px;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+}
+
+.slider-prev-next-control {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .advetrisements_tunung__guaranties_pic{
