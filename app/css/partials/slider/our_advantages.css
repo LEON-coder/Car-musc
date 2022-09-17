@@ -151,19 +151,6 @@
     padding-left: 15px;
   }
   
-  #slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(2), #slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(3), #slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(4), #slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(5), #slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(1) {
-    display: block;
-    float: right;
-    margin-right: 0;
-    background: url(/img/advitrisements_tunung/right_arrow_tuning.png);
-  }
-  
-  #slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(5), #slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(1), #slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(2), #slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(3), #slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(4) {
-    display: block;
-    float: left;
-    margin-left: 30px;
-    background: url(/img/advitrisements_tunung/left_arrow_tuning.png);
-  }
   
   #slider_bl #slide1:checked ~ .slider-prev-next-control label:nth-child(5)::after, #slider_bl #slide2:checked ~ .slider-prev-next-control label:nth-child(1)::after, #slider_bl #slide3:checked ~ .slider-prev-next-control label:nth-child(2)::after, #slider_bl #slide4:checked ~ .slider-prev-next-control label:nth-child(3)::after, #slider_bl #slide5:checked ~ .slider-prev-next-control label:nth-child(4)::after {
     content: "";
