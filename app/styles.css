@@ -794,6 +794,26 @@ nav {
     margin-top: 180px;
 }
 
+.our_advantages__slider {
+    display: flex;
+    height: 660.7106933594px;
+    width: 636px;
+    border-radius: 0;
+    margin-left: 134px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right--margin {
+    display: flex;
+    height: 660.7106933594px;
+    width: 636px;
+    border-radius: 0;
+    margin-right: 134px;
+    flex-direction: column;
+    align-items: center;     
+   }
+
 .our_advantages__block {
     display: flex;
     justify-content: center;
@@ -1203,11 +1223,16 @@ footer {
     flex-grow: 0;
 }
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2560px) {  
+
     .our_works__img {
         display: flex;
-        width: 100%;
         max-width: 100%;
+    }
+    .our_works__pictures {
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -1230,6 +1255,7 @@ footer {
         margin-top: 40px;
         margin-left: 312px;
     }
+  
     .our_works__pictures {
         display: flex;
         margin-top: 60px;
@@ -1238,7 +1264,7 @@ footer {
     }
     .our_works__img {
         display: flex;
-        width: 320px;
+        width: auto;
         height: 280px;
     }
 }
@@ -1270,10 +1296,18 @@ footer {
         margin-top: 180px;
         justify-content: center;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements__block-right {
+        margin-top: 70px;
+        margin-right: 300px;
     }
     .achievements__block-right--2 {
-        margin-top: -240px;
+        margin-top: -716px;
         height: auto;
+        margin-right: -370px;
     }
     .achievements_slider {
         display: flex;
@@ -1284,15 +1318,7 @@ footer {
         position: relative;
         background-color: #141414;
     }
-    .achievements_slider-block {
-        display: flex;
-        width: 1557px;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        padding-top: 180px;
-        flex-wrap: wrap;
-    }
+  
     .achievements_slider-block_item:nth-child(2) {
         margin-right: 0;
     }
@@ -1333,6 +1359,7 @@ footer {
         align-items: center;
         margin-top: 70px;
     }
+ 
     .our_services__block_kind-of-services {
         display: flex;
         margin-top: 80px;
@@ -1613,10 +1640,12 @@ footer {
     }
     .achievements__block-right {
         margin-top: 60px;
+        margin-right: 0;
     }
     .achievements__block-right--2 {
         margin-top: 0;
         height: auto;
+        margin-right: 0;
     }
     .achievements_slider-block {
         display: flex;
@@ -1650,7 +1679,7 @@ footer {
         justify-content: center;
         align-items: center;
         background-color: #141414;
-        margin-top: 1050px;
+        margin-top: 0px;
     }
     .advetrisements_tunung__guaranties_slider {
         display: flex;
@@ -1662,6 +1691,7 @@ footer {
         align-items: center;
         margin-top: 50px;
     }
+    
     .advertisements_tunung__block {
         display: flex;
         align-items: center;
@@ -1669,7 +1699,7 @@ footer {
         height: auto;
         width: 100%;
         border-radius: 0;
-        margin-top: 180px;
+        margin-top: 100px;
         flex-direction: column;
     }
     .our_services__block_kind-of-services {
@@ -1779,7 +1809,7 @@ footer {
         font-family: ReformaGroteskDemiC;
         font-style: normal;
         font-weight: 600;
-        font-size: 52px;
+        font-size: 28px;
         line-height: 140%;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -1916,9 +1946,18 @@ footer {
         background-color: #141414;
         margin-top: 0px;
     }
+
+    .advertisements_tunung__guaranties {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 200px;
+        align-items: center;
+    }
     .advetrisements_tunung__guaranties_slider {
         display: flex;
-        height: auto;
         width: 100%;
         border-radius: 0;
         margin-left: 0;
@@ -1926,11 +1965,8 @@ footer {
         align-items: center;
         margin-top: 50px;
     }
-    .slider-prev-next-control {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
+
+  
     .advetrisements_tunung__guaranties_pic {
         width: 100%;
         height: auto;
@@ -1940,7 +1976,7 @@ footer {
         align-items: center;
         position: relative;
         height: auto;
-        width: 100%;
+        width: 90%;
         border-radius: 0;
         margin-top: 0px;
         flex-direction: column;
@@ -1949,7 +1985,7 @@ footer {
         margin-top: 40px;
         position: relative;
         height: auto;
-        width: 90%;
+        width: 100%;
         border-radius: 0;
         display: flex;
         justify-content: center;
@@ -1957,17 +1993,8 @@ footer {
         margin-bottom: 100px;
     }
     .advetrisements_tunung__guaranties_slider-block--text {
-        width: 60%;
+        width: auto;
         height: auto;
-        font-family: ReformaGroteskDemiC;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 140%;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #fff;
     }
     .advetrisements_tunung__guaranties_slider-block--slider {
         display: flex;
@@ -1993,7 +2020,11 @@ footer {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 60px;
+        margin-top: 0px;
+    }
+
+    .margin--class {
+        margin-top: 50px;
     }
     .our_services__block {
         display: flex;
@@ -2092,6 +2123,19 @@ footer {
         width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contacts__block_header {
+        font-family: ReformaGroteskDemiC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: -300px;
     }
     .contacts__block__form_name {
         display: flex;

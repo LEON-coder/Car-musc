@@ -1,0 +1,224 @@
+
+.our_advantages__slider{
+    display: flex;
+    height: 660.7106933594px;
+    width: 636px;
+    border-radius: 0;
+    margin-left: 134px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_advantages__slider-block--text {
+    width: 422px;
+    height: 50px;
+    font-family: ReformaGroteskDemiC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+#our_advantages__slider_bl .our_advantages__wrapper{
+	max-width:60em;
+	margin:1em auto;
+	position:relative
+}
+#our_advantages__slider_bl input{
+	display:none
+}
+#our_advantages__slider_bl .inner{
+	width:500%;
+	line-height:0
+}
+#our_advantages__slider_bl article{
+	width:20%;
+	float:left;
+	position:relative
+}
+#our_advantages__slider_bl article img{
+	width:100%
+}
+#our_advantages__slider_bl .slider-prev-next-control {
+    height: 50px;
+    position: absolute;
+    top: 107%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#our_advantages__slider_bl .slider-prev-next-control label{
+	display:none;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background:#fff;
+	opacity:.7
+}
+#our_advantages__slider_bl .slider-prev-next-control label:hover{
+	opacity:1
+}
+#our_advantages__slider_bl .slider-dot-control {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: none;
+}
+#our_advantages__slider_bl .slider-dot-control label{
+	cursor:pointer;
+	border-radius:5px;
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background:#bbb;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s
+}
+#our_advantages__slider_bl .slider-dot-control label:hover{
+	background:#ccc;
+	border-color:#777
+}
+#our_advantages__slider_bl .info{
+	position:absolute;
+	font-style:italic;
+	line-height:20px;
+	opacity:0;
+	color:#000;
+	text-align:left;
+	-webkit-transition:all 1s ease-out .6s;
+	-moz-transition:all 1s ease-out .6s;
+	transition:all 1s ease-out .6s
+}
+#our_advantages__slider_bl .info h3{
+	color:#fcfff4;
+	margin:0 0 5px;
+	font-weight:400;
+	font-size:1.5em;
+	font-style:normal
+}
+#our_advantages__slider_bl .info.top-left{
+	top:30px;
+	left:30px
+}
+#our_advantages__slider_bl .info.top-right{
+	top:30px;
+	right:30px
+}
+#our_advantages__slider_bl .info.bottom-left{
+	bottom:30px;
+	left:30px
+}
+#our_advantages__slider_bl .info.bottom-right{
+	bottom:30px;
+	right:30px
+}
+#our_advantages__slider_bl .our_advantages__slider-wrapper{
+	width:100%;
+	overflow:hidden;
+	border-radius:5px;
+	box-shadow:1px 1px 4px #666;
+	background:#fff;
+	background:#fcfff4;
+	-webkit-transform:translateZ(0);
+	-moz-transform:translateZ(0);
+	-ms-transform:translateZ(0);
+	-o-transform:translateZ(0);
+	transform:translateZ(0);
+	-webkit-transition:all .5s ease-out;
+	-moz-transition:all .5s ease-out;
+	transition:all .5s ease-out
+}
+#our_advantages__slider_bl .our_advantages__slider-wrapper .inner{
+	-webkit-transform:translateZ(0);
+	-moz-transform:translateZ(0);
+	-ms-transform:translateZ(0);
+	-o-transform:translateZ(0);
+	transform:translateZ(0);
+	-webkit-transition:all .8s cubic-bezier(.77,0,.175,1);
+	-moz-transition:all .8s cubic-bezier(.77,0,.175,1);
+	transition:all .8s cubic-bezier(.77,0,.175,1)
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(2)::after,#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(5)::after,#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(1)::after,#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(3)::after,#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(2)::after,#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(4)::after,#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(3)::after,#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(5)::after,#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(1)::after,#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(4)::after{
+	font-family:FontAwesome;
+	font-style:normal;
+	font-weight:400;
+	text-decoration:inherit;
+	margin:0;
+	line-height:38px;
+	font-size:3em;
+	display:block;
+	color:#777
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(2)::after,#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(3)::after,#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(4)::after,#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(5)::after,#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(1)::after{
+		padding-left:15px;
+    }
+#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(2),#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(3),#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(4),#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(5),#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(1){
+	display:block;
+	float:right;
+	margin-right:5px;
+    height: 70.71067810058594px;
+    width: 70.71067810058594px;
+    background:url(../../img/achievements_slider/arrow-slide-right.png)
+
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(5),#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(1),#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(2),#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(3),#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(4){
+	display:block;
+	float:left;
+	margin-left:5px;
+    height: 70.71067810058594px;
+    width: 70.71067810058594px;
+    background:url(../../img/achievements_slider/arrow-slide-left.png)
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(5)::after,#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(1)::after,#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(2)::after,#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(3)::after,#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(4)::after{
+	
+	padding-left:8px;
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-dot-control label:nth-child(1),#our_advantages__slider_bl #slide-2:checked~.slider-dot-control label:nth-child(2),#our_advantages__slider_bl #slide-3:checked~.slider-dot-control label:nth-child(3),#our_advantages__slider_bl #slide-4:checked~.slider-dot-control label:nth-child(4),#our_advantages__slider_bl #slide-5:checked~.slider-dot-control label:nth-child(5){
+	background:#333
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-wrapper article:nth-child(1) .info,#our_advantages__slider_bl #slide-2:checked~.slider-wrapper article:nth-child(2) .info,#our_advantages__slider_bl #slide-3:checked~.slider-wrapper article:nth-child(3) .info,#our_advantages__slider_bl #slide-4:checked~.slider-wrapper article:nth-child(4) .info,#our_advantages__slider_bl #slide-5:checked~.slider-wrapper article:nth-child(5) .info{
+	opacity:1
+}
+#our_advantages__slider_bl #slide-1:checked~.slider-wrapper .inner{
+	margin-left:0
+}
+#our_advantages__slider_bl #slide-2:checked~.slider-wrapper .inner{
+	margin-left:-100%
+}
+#our_advantages__slider_bl #slide-3:checked~.slider-wrapper .inner{
+	margin-left:-200%
+}
+#our_advantages__slider_bl #slide-4:checked~.slider-wrapper .inner{
+	margin-left:-300%
+}
+#our_advantages__slider_bl #slide-5:checked~.slider-wrapper .inner{
+	margin-left:-400%
+}
+@media only screen and (max-width:850px) and (min-width:450px){
+	#our_advantages__slider_bl .slider-wrapper{
+		border-radius:0
+	}
+}
+@media only screen and (max-width:450px){
+	#our_advantages__slider_bl .slider-wrapper{
+		border-radius:0
+	}
+	#our_advantages__slider_bl .slider-wrapper .info{
+		opacity:0
+	}
+}
+@media only screen and (min-width:850px){
+	#our_advantages__slider_bl body{
+		padding:0 80px
+	}
+}

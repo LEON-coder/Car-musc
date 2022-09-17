@@ -4,6 +4,16 @@
     margin-top: 180px;
 }
 
+
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 90%;
+        height: 610px;
+        margin-top: 180px;
+    }
+
+}
+
 .ism-slider>ol,
 .ism-slider>ol>li,
 .ism-slider>ol>li>img {
@@ -23,27 +33,13 @@
     -ms-user-select: none;
     user-select: none;
     cursor: default;
-    z-index: 2;
-    -webkit-animation: "ism-fadein" 3s;
+    z-index: 2;    
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
 
-@-webkit-keyframes ism-fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-@-webkit-keyframes ism-loading {
-    50% {
-        left: 120px;
-    }
-}
 
 .ism-slider .ism-slides {
     list-style: none;
@@ -246,50 +242,6 @@ p.ism-badge a.ism-link:hover {
     text-decoration: underline;
 }
 
-.ism-zoom-in {
-    -webkit-animation: zoomin 0.81s linear 1;
-    animation: zoomin 0.81s linear 1;
-}
-
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
-    }
-    100% {
-        -webkit-transform: scale(3.0);
-        transform: scale(3.0);
-    }
-}
-
-@keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
-    }
-    100% {
-        -webkit-transform: scale(3.0);
-        transform: scale(3.0);
-    }
-}
-
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 @-webkit-keyframes slidein {
     0% {
@@ -668,7 +620,7 @@ p.ism-badge a.ism-link:hover {
 
 .achievements_slider-block {
     display: flex;
-    width: 1557px;
+    width: 100%;
     height: 420px;
     justify-content: center;
     align-items: center;
@@ -727,4 +679,115 @@ p.ism-badge a.ism-link:hover {
     color: #fff;
     z-index: 3;
     padding-top: 65px;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    #my-slider .ism-button-prev {
+        top: 80%;
+    }
+
+    #my-slider .ism-button-next {
+        top: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .our_advantages__block {
+        display: flex;
+        justify-content: center;
+        margin-top: 180px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements_slider-block {
+        display: flex;
+        width: 100%;
+        height: 950px;
+        justify-content: center;
+        align-items: initial;
+        padding-top: 70px;
+    }
+
+    #my-slider {
+        width: 100%;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 950px;
+    }
+
+    .achievements_slider_pic {
+        width:auto;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #my-slider .ism-button-prev {
+        top: 51%;
+    }
+
+    #my-slider .ism-button-next {
+        top: 49%;
+    }
+
+    .container {
+        width: 90%;
+        height: 610px;
+        margin-top: -100px;
+    }
+
+    #my-slider {
+        width: 100%;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 700px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+.ism-slider .ism-slides {
+    width: 100%;
+}
+
+.achievements_slider-block_item {
+    display: flex;
+    height: 350px;
+    width: 416px;
+    border-radius: 0;
+    margin-right: 24px;
+    flex-direction: column;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#my-slider {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 720px;
+}
+
+#my-slider .ism-button-prev {
+    top: 90%;
+}
+
+#my-slider .ism-button-next {
+    top: 89%;
+}
+
+#my-slider .ism-button-next {
+    top: 89.5%;
+}
 }
