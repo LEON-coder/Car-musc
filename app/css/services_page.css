@@ -777,6 +777,9 @@ nav {
 .our_works__pictures {
   display: flex;
   margin-top: 60px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .margin--zero {
@@ -786,6 +789,8 @@ nav {
 .our_works__img {
   display: flex;
   width: 100%;
+  max-width: 310px;
+  height: auto;
 }
 
 .contacts {
@@ -1473,6 +1478,7 @@ footer {
     height: auto;
     margin-top: 50px;
   }
+
   .tunung__guaranties_describe {
     width: 90%;
     height: auto;
@@ -1550,13 +1556,13 @@ footer {
     justify-content: space-between;
   }
   .advetrisements_tunung__guaranties_slider-block--text {
-    width: 422px;
+    width: 80%;
     height: auto;
-  }
+}
   .advetrisements_tunung__guaranties_slider-block {
-    width: 90%;
+    width: 100%;
     height: auto;
-  }
+}
   .width--service {
     width: 90%;
     font-family: ReformaGroteskDemiC;
@@ -1683,6 +1689,7 @@ footer {
     width: 90%;
   }
 }
+
 @font-face {
   font-family: Reformagroteskmediumc;
   src: url(../fonts/ReformaGroteskMedium.woff2);
