@@ -1967,9 +1967,9 @@ footer {
     }
 
   
-    .advetrisements_tunung__guaranties_pic {
+    #slider_bl article img {
         width: 100%;
-        height: auto;
+        height: 271px;
     }
     .advertisements_tunung__block {
         display: flex;
@@ -1999,7 +1999,7 @@ footer {
     .advetrisements_tunung__guaranties_slider-block--slider {
         display: flex;
         position: absolute;
-        top: 40px;
+        top: 100px;
         width: 100%;
         justify-content: space-between;
     }
