@@ -41,7 +41,7 @@ nav {
 }
 
 .nav__list_item {
-  font-family: ReformaGroteskMediumC;
+  font-family: 'ReformaGroteskMediumC';
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -70,7 +70,7 @@ nav {
 .header__main-name {
   width: 636px;
   height: 160px;
-  font-family: ReformaGroteskBoldC;
+  font-family: 'ReformaGroteskBoldC';
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
