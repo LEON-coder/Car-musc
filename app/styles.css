@@ -56,13 +56,18 @@ nav {
 }
 
 .nav__list_item {
-    font-family: ReformaGroteskMediumC;
+    font-family: 'ReformaGroteskMediumC';
     font-size: 24px;
     font-weight: 500;
     line-height: 29px;
     letter-spacing: 0.03em;
     text-align: center;
     margin-right: 40px;
+}
+
+.nav__list_link {
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav__list_item:last-child {
@@ -1741,21 +1746,15 @@ footer {
 
     .nav__list {
         color: #fff;
+        display: none;
         list-style: none;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         padding: 0;
         gap: 40px;
-        margin-top: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0px;
-        background: black;
-        z-index: 7;
-        opacity: 0;
-        transition: 0.7s;
+        height: 29px;
+        margin-top: 40px;
+        margin-left: 0;
     }
 
     .nav__list_item {
@@ -1786,6 +1785,15 @@ footer {
         padding-bottom: 40px;
         color: black;
         justify-content: center;
+    }
+
+    .nav__list_link {
+        text-decoration: none;
+        color: #FFFFFF;
+      }
+
+    .nav__list_link:hover {
+        color:black;
     }
 
 
@@ -1852,13 +1860,7 @@ footer {
     }
 
 
-    #burger-menu--close {
-
-    }
-
-
-
-    #burger-menu:after {
+       #burger-menu:after {
         content: "";
         position: absolute;
         width: 40px;
@@ -1887,7 +1889,16 @@ footer {
         animation: BurgerOpen;
         transition: 0.7s;
         opacity: 1;
-    }
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        z-index: 7;
+      }
 
 
     @keyframes BurgerOpen {
@@ -2131,6 +2142,13 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 0px;
+    }
+
+    .our_works__img {
+        display: flex;
+        width: 320px;
+        height: 280px;
+        margin-top: 30px;
     }
 
     .margin--class {
