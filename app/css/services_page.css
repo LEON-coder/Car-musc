@@ -1,3 +1,11 @@
+body {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #141414;
+}
+
+
 header {
   display: flex;
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(../img/header/background-header.jpg);
@@ -1427,6 +1435,7 @@ footer {
     flex-direction: column;
     padding: 0;
     gap: 40px;
+    animation: BurgerOpen 1s;
 }
 
 .nav__list {
@@ -1439,6 +1448,7 @@ footer {
   gap: 40px;
   height: 29px;
   margin-top: 40px;
+  animation: BurgerOpen 1s;
 }
 
 .nav__list_item {
@@ -1451,24 +1461,7 @@ footer {
   padding-top: 40px;
   text-align: center;
   width: 100%;
-  padding-bottom: 40px;
-}
-
-.nav__list_item:hover {
-  display: flex;
-  background: #FDEAA8;
-  font-family: 'ReformaGroteskMediumC';
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 29px;
-  letter-spacing: 0.03em;
-  margin-right: 0;
-  padding-top: 40px;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 40px;
-  color: black;
-  justify-content: center;
+  padding-bottom: 40px;  
 }
 
 .nav__list_link {
@@ -1489,6 +1482,7 @@ footer {
   z-index: 20;
   top: 40px;
   right: 40px;
+  animation: BurgerOpen 1s;
 }
 
 #burger-menu:after {
@@ -1512,13 +1506,13 @@ footer {
   z-index: 20;
   top: 10px;
   right: -10px;
-  animation: 'BurgerOpen' 1s;
+  animation: BurgerOpen 1s;
 }
 
 
 .open-burger {
   display: flex;
-  animation: BurgerOpen;
+  animation: BurgerOpen 1s;
   transition: 0.7s;
   opacity: 1;
   flex-direction: column;
@@ -1791,6 +1785,47 @@ footer {
     margin-top: 24px;
     flex-direction: column;
   }
+
+  .contacts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #141414;
+    height: auto;
+}
+
+.submit {
+  position: relative;
+  font-family: ReformaGroteskDemiC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 3;
+  text-decoration: none;
+  height: 34px;
+  width: 94px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #141414;
+}
+
   .footer__block_items {
     display: flex;
     width: 90%;
@@ -1814,15 +1849,15 @@ footer {
   }
 }
 @font-face {
-  font-family: Reformagroteskmediumc;
+  font-family: 'Reformagroteskmediumc';
   src: url(../fonts/ReformaGroteskMedium.woff2);
 }
 @font-face {
-  font-family: ReformaGroteskBoldC;
+  font-family: 'ReformaGroteskBoldC';
   src: url(../fonts/ReformaGroteskBold.woff2);
 }
 @font-face {
-  font-family: ReformaGroteskDemiC;
+  font-family: 'ReformaGroteskDemiC';
   src: url(../fonts/ReformaGroteskDemi.woff2);
 }
 * {

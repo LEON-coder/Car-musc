@@ -1791,7 +1791,7 @@ footer {
     }
     .header__main-name {
         width: 80%;
-        font-family: ReformaGroteskBoldC;
+        font-family: 'ReformaGroteskBoldC';
         font-style: normal;
         font-weight: 700;
         font-size: 80px;
@@ -1822,7 +1822,7 @@ footer {
     }
     .header__describe-text {
         width: 90%;
-        font-family: ReformaGroteskMediumC;
+        font-family: 'ReformaGroteskMediumC';
         font-style: normal;
         font-weight: 500;
         font-size: 40px;
