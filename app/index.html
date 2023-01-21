@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/partials/slider/achievements_slider.css"/>
     <link rel="stylesheet" href="css/partials/slider/our_advantages_slider.css"/>
 
-    <script src="slider/imageslidermaker/ism/js/ism-2.2.min.js"></script>
+   
 </head>
   <body> 
     <header>
@@ -22,6 +22,7 @@
           <li class="nav__list_item">Детейлинг автомобилей  </li>
           <li class="nav__list_item">Галерея работ</li>
         </ul>
+        <span id="burger-menu">
       </nav>
       <div class="header__main_text">
         <div class="header__main-name">CAR MUSC</div>
@@ -45,7 +46,7 @@
     <div class="achievements">
       <div class="achievements__block-awards"> 
         <div class="achievements__block-left">
-          <div class="achievements__block-text">наши достижения от кубка россии до чемпионатов мира</div><img class="achievements__block-figure" src="/img/achievements/frame_achievements.png"/>
+          <div class="achievements__block-text">наши достижения от кубка россии до чемпионатов мира</div><img class="achievements__block-figure" src="img/achievements/frame_achievements.png"/>
           <div class="achievements__block-characteristic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat. </div>
         </div>
         <div class="achievements__block-right"> 
@@ -117,19 +118,22 @@
               <ol>
                 <li>
                   <div class="achievements_slider-block"> 
-                    <div class="achievements_slider-block_item"> <img class="achievements_slider_pic" src="img/achievements_slider/pic_1_slide.jpg"/>
+                    <div class="achievements_slider-block_item"> 
+                      <img class="achievements_slider_pic" src="img/achievements_slider/pic_1_slide.jpg"/>
                       <div class="rectangle__block">
                         <div class="rectangle"></div>
                         <p class="rectangle__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit </p>
                       </div>
                     </div>
-                    <div class="achievements_slider-block_item"><img class="achievements_slider_pic" src="img/achievements_slider/pic_2_slide.jpg"/>
+                    <div class="achievements_slider-block_item">
+                      <img class="achievements_slider_pic" src="img/achievements_slider/pic_2_slide.jpg"/>
                       <div class="rectangle__block">
                         <div class="rectangle"></div>
                         <p class="rectangle__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit </p>
                       </div>
                     </div>
-                    <div class="achievements_slider-block_item"><img class="achievements_slider_pic" src="img/achievements_slider/pic_3_slide.jpg"/>
+                    <div class="achievements_slider-block_item">
+                      <img class="achievements_slider_pic" src="img/achievements_slider/pic_3_slide.jpg"/>
                       <div class="rectangle__block">
                         <div class="rectangle"></div>
                         <p class="rectangle__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit </p>
@@ -183,10 +187,10 @@
                 </li>
               </ol>
               <div class="ism-button ism-button-prev">
-                <img src="img/achievements_slider/arrow-slide-left.png", alt="">
+                <img src="img/achievements_slider/arrow-slide-left.png", alt="slide-left">
               </div>
               <div class="ism-button ism-button-next right">
-                <img src="img/achievements_slider/arrow-slide-right.png", alt="">
+                <img src="img/achievements_slider/arrow-slide-right.png", alt="slide-right">
               </div>
             </div>
             </div>
@@ -379,12 +383,12 @@
       <div class="contacts__block"> 
         <div class="contacts__block_header">ответим на любой вопрос </div><img class="tunung__guaranties_frame" src="img/our_services/decoration_pics.png"/>
         <div class="contacts__block__form"> 
-          <div class="form__block"> 
-            <div class="contacts__block__form_name">Имя</div>
-            <div class="contacts__block__form_phone">телефон</div>
-          </div>
+          <form class="form__block"> 
+            <input class="contacts__block__form_name" placeholder="ИМЯ"></input>
+            <input class="contacts__block__form_phone" placeholder="телефон"></input>
+          </form>
           <div class="form__block_questions"> 
-            <div class="form_questions">Вопрос по дизайну, тюнингу и др.</div>
+            <input class="form_questions" placeholder="Вопрос по дизайну, тюнингу и др."></input>
             <div class="block__socilal_icons"><img class="social_icon" src="img/contacts/telegram_icon.svg"/><img class="social_icon" src="img/contacts/youtube_icon.svg"/><img class="social_icon" src="img/contacts/vk_icon.svg"/></div>
           </div>
           <div class="block__contacts_and_address"> <a class="submit" href="">отправить</a>
@@ -415,6 +419,7 @@
         </ul>
       </div>
     </footer>
-    
+    <script src="slider/imageslidermaker/ism/js/ism-2.2.min.js"></script>
+    <script src="../app/js/burger-menu.js"></script>
   </body>
 </html>

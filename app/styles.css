@@ -1,15 +1,15 @@
 @font-face {
-    font-family: Reformagroteskmediumc;
+    font-family: "Reformagroteskmediumc";
     src: url(fonts/ReformaGroteskMedium.woff2);
 }
 
 @font-face {
-    font-family: ReformaGroteskBoldC;
+    font-family: "ReformaGroteskBoldC";
     src: url(fonts/ReformaGroteskBold.woff2);
 }
 
 @font-face {
-    font-family: ReformaGroteskDemiC;
+    font-family: "ReformaGroteskDemiC";
     src: url(fonts/ReformaGroteskDemi.woff2);
 }
 
@@ -950,6 +950,7 @@ nav {
     border-radius: 0;
     align-items: center;
     padding-left: 25px;
+    background: transparent;
 }
 
 .contacts__block__form_name:hover,
@@ -983,6 +984,7 @@ nav {
     margin-left: 24px;
     align-items: center;
     padding-left: 25px;
+    background: transparent;
 }
 
 .form__block_questions {
@@ -995,7 +997,7 @@ nav {
 
 .form_questions {
     display: flex;
-    font-family: ReformaGroteskDemiC;
+    font-family: "ReformaGroteskDemiC";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1006,8 +1008,10 @@ nav {
     width: 526px;
     border-radius: 0;
     border: 1px solid #898989;
-    padding-top: 15px;
+    padding-top: 0;
     padding-left: 25px;
+    background: transparent;
+    padding-bottom: 90px;
 }
 
 .block__socilal_icons {
@@ -1087,7 +1091,7 @@ nav {
 
 .address-block {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 293px;
 }
 
@@ -1108,13 +1112,13 @@ nav {
 
 .block__phone_and_e-mail {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 13px;
 }
 
 .phone-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 126px;
     height: 22px;
 }
@@ -1148,6 +1152,7 @@ nav {
     display: flex;
     width: 112px;
     height: 22px;
+    margin-left: 30px;
 }
 
 .e-mail_icon {
@@ -1726,22 +1731,64 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+
     nav {
-        display: none;
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         padding: 0;
         gap: 40px;
     }
+
     .nav__list {
         color: #fff;
         list-style: none;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         padding: 0;
         gap: 40px;
-        height: 29px;
-        margin-top: 40px;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        background: black;
+        z-index: 7;
+        opacity: 0;
+        transition: 0.7s;
     }
+
+    .nav__list_item {
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        margin-right: 0;
+        padding-top: 40px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .nav__list_item:hover {
+        display: flex;
+        background: #FDEAA8;
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        margin-right: 0;
+        padding-top: 40px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 40px;
+        color: black;
+        justify-content: center;
+    }
+
+
     .header__main_text {
         margin-top: 237px;
         display: flex;
@@ -1793,6 +1840,69 @@ footer {
         height: auto;
         margin-top: 40px;
     }
+
+    #burger-menu {
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: #DB3138;
+        z-index: 20;
+        top: 40px;
+        right: 40px;
+    }
+
+
+    #burger-menu--close {
+
+    }
+
+
+
+    #burger-menu:after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: #DB3138;
+        z-index: 20;
+        top: -10px;
+        right: -10px;
+    }
+
+    
+    #burger-menu:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: #DB3138;
+        z-index: 20;
+        top: 10px;
+        right: -10px;
+        animation: 'BurgerOpen' 1s;
+    }
+
+    .open-burger {
+        display: flex;
+        animation: BurgerOpen;
+        transition: 0.7s;
+        opacity: 1;
+    }
+
+
+    @keyframes BurgerOpen {
+      0% {
+        opacity:0;
+        transition: 1s;
+    }
+
+    100% {
+        opacity: 1;
+        transition: 1s;
+    }
+}
+
+
     .achievements__block-awards {
         display: flex;
         width: 100%;
