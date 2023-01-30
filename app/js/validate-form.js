@@ -1,43 +1,56 @@
-let form = document.querySelector('.js-form'),
-    formInputs = document.querySelectorAll('.js-input'),
-    inputPhone = document.querySelector('.js-input-phone'),
-    inputName = document.querySelector('.js-input-name');
 
-function validateEmail(email) {
-    let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
-    return re.test(String(email).toLowerCase());
+
+
+// Определяем функции для проверки формы
+    function validateForm() {
+  // Получение значений элементов формы
+  var name = document.contactForm.name.value;
+  var mobile = document.contactForm.mobile.value;
+  // Определяем переменные ошибок со значением по умолчанию
+  var nameErr = emailErr = mobileErr = countryErr = genderErr = true;
+
+  // Проверяем имя
+  if(name == "") {
+    printError("nameErr", "Пожалуйста, введите ваше имя");
+} else {
+    var regex = /^[a-zA-Z\s]+$/;                
+    if(regex.test(name) === false) {
+        printError("nameErr", "Пожалуйста, введите правильное имя");
+    } else {
+        printError("nameErr", "");
+        nameErr = false;
+    }
 }
 
+  // Проверяем номер мобильного телефона
+  if(mobile == "") {
+    printError("mobileErr", "Пожалуйста, введите номер вашего мобильного телефона");
+} else {
+    var regex = /^[1-9]\d{9}$/;
+    if(regex.test(mobile) === false) {
+        printError("mobileErr", "Пожалуйста, введите действительный 10-значный номер мобильного телефона");
+    } else{
+        printError("mobileErr", "");
+        mobileErr = false;
+    }
+}
 
-
-
-
-form.onsubmit = function(){
-    let emailVal = inputEmail.value,
-        phoneVal = inputPhone.value,
-        emptyInputs = Array.from(formInputs).filter(input => input.value === '');
-
-
-    formInputs.forEach(function(input) {
-        if (input.value === '') {
-            input.classList.add('error');
-         }
-         else {
-            input.classList.remove('error');
-         }
-    });
-
-    if (emptyInputs.length !==0) {
-        console.log('inputs not filled');
-        return false;
+// Запрещаем отправку формы в случае ошибок
+if((nameErr || mobileErr ) == true) {
+    return false;
+ } else {
+     // Создаем строки из входных данных для предварительного просмотра
+     var dataPreview = "Вы ввели следующие данные: \n" +
+                       "Имя: " + name + "\n" +                      
+                       "Номер: " + mobile ;
+  
     }
 
-if(!validateEmail(emailVal)) {
-    console.log('email not valid'),
-    inputEmail.classList.add('error');
-    return false;
-} else {
-    inputEmail.classList.remove('error');
-}}
+     // Отображаем входные данные в диалоговом окне перед отправкой формы
+     alert(dataPreview);
+    }
+
+
+   
 
     

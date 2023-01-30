@@ -183,16 +183,17 @@
       <div class="contacts__block">
         <div class="contacts__block_header">ответим на любой вопрос</div><img class="tunung__guaranties_frame" src="img/our_services/decoration_pics.png"/>
         <div class="contacts__block__form">
-          <form class="form__block"> 
-            <input class="contacts__block__form_name"  placeholder="ИМЯ" required></input>
-            <input class="contacts__block__form_phone" placeholder="телефон" required ></input>
+          <form class="form__block formWithValidation" id="form" name='registration' action="/feedback/" method="post" onSubmit="return formValidation()" >
+            <p id="message" >Пожалуйста, заполните все поля формы!</p>  
+            <input class="contacts__block__form_name" id="name" name="userid"  placeholder="ИМЯ" required></input>
+            <input class="contacts__block__form_phone" id="phone" placeholder="телефон" required></input>
           </form>
           <div class="form__block_questions"> 
             <input class="form_questions" placeholder="Вопрос по дизайну, тюнингу и др." required></input>
             <div class="block__socilal_icons"><img class="social_icon" src="img/contacts/telegram_icon.svg"/><img class="social_icon" src="img/contacts/youtube_icon.svg"/><img class="social_icon" src="img/contacts/vk_icon.svg"/></div>
           </div>
           <div class="block__contacts_and_address">
-            <a class="submit" href="#">отправить</a>
+            <input type="submit" class="validateBtn" value='Validate'>отправить</input>
             <div class="address_and_e-mail">
               <div class="address-block"><img class="address_icon" src="img/contacts/carbon_location-filled.svg" alt="alt"/>
                 <div class="location">Eu faucibus et rutrum fringilla orci nunc</div>

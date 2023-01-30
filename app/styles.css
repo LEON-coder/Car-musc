@@ -925,11 +925,6 @@ nav {
     color: #fff;
 }
 
-.form__block {
-    display: flex;
-    width: 636px;
-    justify-content: space-between;
-}
 
 .contacts__block__form {
     display: flex;
@@ -992,6 +987,17 @@ nav {
     background: transparent;
 }
 
+.forms_name_and_phone {
+    display: flex;
+}
+
+.form__block {
+    display: flex;
+    width: 636px;
+    height: 306px;
+    flex-direction: column;
+}
+
 .form__block_questions {
     display: flex;
     width: 636px;
@@ -1040,7 +1046,7 @@ nav {
 
 .submit {
     position: relative;
-    font-family: ReformaGroteskDemiC;
+    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1051,12 +1057,14 @@ nav {
     color: #fff;
     z-index: 3;
     text-decoration: none;
-    height: 34px;
-    width: 94px;
+    height: 60px;
+    width: 142px;
     padding-left: 25px;
-    padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 12px;
+    padding-right: 25px;
+    background: transparent;
+    border: none;
 }
 
 .submit:before {
@@ -1066,7 +1074,7 @@ nav {
     left: 0;
     width: 0;
     height: 61px;
-    font-family: ReformaGroteskDemiC;
+    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
