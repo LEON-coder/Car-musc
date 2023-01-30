@@ -397,20 +397,33 @@
       <div class="contacts__block"> 
         <div class="contacts__block_header">ответим на любой вопрос </div><img class="tunung__guaranties_frame" src="img/our_services/decoration_pics.png"/>
         <div class="contacts__block__form"> 
-          <form class="form__block" name="contactForm" onsubmit="return validateForm()" action="confirmation.php" method="post" > 
+          <form class="form__block" action="" method="post" > 
             <div class="forms_name_and_phone">
-            <input type="text" class="contacts__block__form_name" id="name" name="name" placeholder="ИМЯ"  required></input>
+            <input type="text" class="contacts__block_form-name js-input "  name="name" placeholder="ИМЯ"  required></input>
             <div class="error" id="nameErr"></div>
-            <input type="text" class="contacts__block__form_phone" id="phone" maxlength="11" name="mobile" placeholder="телефон" required ></input>
+            <input type="text" class="contacts__block_form-phone js-input " name="phone" placeholder="телефон" required ></input>
             <div class="error" id="mobileErr"></div>
             </div>
             <div class="form__block_questions"> 
-              <input class="form_questions from field" placeholder="Вопрос по дизайну, тюнингу и др." required></input>
+              <input class="form_questions js-input" placeholder="Вопрос по дизайну, тюнингу и др." required></input>
               <div class="block__socilal_icons">
-              <img class="social_icon" src="img/contacts/telegram_icon.svg"/><img class="social_icon" src="img/contacts/youtube_icon.svg"/><img class="social_icon" src="img/contacts/vk_icon.svg"/></div>
+                
+            <a href="https://telegram.org" class="social_icon">
+              <img src="img/contacts/telegram_icon.svg"/>
+             </a>
+              
+             <a href="https://www.youtube.com" class="social_icon">
+              <img src="img/contacts/youtube_icon.svg"/>
+            </a>
+
+            <a href="https://vk.com/feed" class="social_icon">
+              <img class="social_icon" src="img/contacts/vk_icon.svg"/>
+            </a>
+
+            </div>
             </div>         
             <div class="block__contacts_and_address">
-              <input type="submit" class="submit" class="validateBtn" value='отправить'> </input>
+              <button type="submit" class="submit btn"  value='отправить'>отправить </button>
               <div class="address_and_e-mail"> 
                 <div class="address-block"> 
                   <img class="address_icon" src="img/contacts/carbon_location-filled.svg" alt=""/>
