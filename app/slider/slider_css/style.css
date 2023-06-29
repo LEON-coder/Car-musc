@@ -149,7 +149,7 @@
 	transition:all .8s cubic-bezier(.77,0,.175,1)
 }
 #our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(2)::after,#our_advantages__slider_bl #slide-1:checked~.slider-prev-next-control label:nth-child(5)::after,#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(1)::after,#our_advantages__slider_bl #slide-2:checked~.slider-prev-next-control label:nth-child(3)::after,#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(2)::after,#our_advantages__slider_bl #slide-3:checked~.slider-prev-next-control label:nth-child(4)::after,#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(3)::after,#our_advantages__slider_bl #slide-4:checked~.slider-prev-next-control label:nth-child(5)::after,#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(1)::after,#our_advantages__slider_bl #slide-5:checked~.slider-prev-next-control label:nth-child(4)::after{
-	font-family:FontAwesome;
+	font-family: 'FontAwesome';
 	font-style:normal;
 	font-weight:400;
 	text-decoration:inherit;

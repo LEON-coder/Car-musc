@@ -10,6 +10,7 @@ const { stream } = require("browser-sync");
 const browserSync = require('browser-sync').create();
 const imagemin = require("gulp-imagemin");
 const sourcemaps = require('gulp-sourcemaps');
+const notify = require('gulp-notify');
 
 
 
