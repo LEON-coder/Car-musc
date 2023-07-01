@@ -1881,7 +1881,7 @@ footer {
     .header__contacts {
         display        : flex;
         border         : 1px solid #fff;
-        width          : 100%;
+        width          : 80%;
         height         : 20%;
         justify-content: space-between;
         align-items    : center;
@@ -1912,7 +1912,7 @@ footer {
     }
 
     #burger-menu {
-        position  : absolute;
+        position  : fixed;
         width     : 40px;
         height    : 3px;
         background: #DB3138;
@@ -1946,19 +1946,27 @@ footer {
     }
 
     .open-burger {
-        display       : flex;
-        transition    : 0.7s;
-        opacity       : 1;
-        flex-direction: column;
-        width         : 100%;
-        background    : black;
-        height        : 100%;
-        position      : absolute;
-        top           : 0;
-        left          : 0;
-        margin-top    : 0;
-        z-index       : 7;
-        animation     : BurgerOpen 1s;
+        display        : flex;
+        transition     : 0.7s;
+        opacity        : 1;
+        flex-direction : column;
+        width          : 100%;
+        background     : black;
+        height         : 100%;
+        top            : 0;
+        left           : 0;
+        margin-top     : 0;
+        z-index        : 7;
+        animation      : BurgerOpen 1s;
+        justify-content: center;
+        align-items    : center;
+        position       : fixed;
+    }
+
+    .nav__list-item {
+        margin-right : 0;
+        margin-bottom: 50px;
+        margin-top   : 50px;
     }
 
 
