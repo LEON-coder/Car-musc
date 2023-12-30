@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Reformagroteskmediumc";
-    src        : url(./fonts/ReformaGroteskMedium.woff2);
+    src        : url(../fonts/ReformaGroteskMedium.woff2);
 }
 
 @font-face {
     font-family: "ReformaGroteskBoldC";
-    src        : url(./fonts/ReformaGroteskBold.woff2);
+    src        : url(../fonts/ReformaGroteskBold.woff2);
 }
 
 @font-face {
     font-family: "ReformaGroteskDemiC";
-    src        : url(./fonts/ReformaGroteskDemi.woff2);
+    src        : url(../fonts/ReformaGroteskDemi.woff2);
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 
 header {
     display            : flex;
-    background         : linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(img/header/background-header.jpg);
+    background         : linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(../img/header/background-header.jpg);
     width              : 100%;
     height             : 1000px;
     background-position: center;
@@ -957,10 +957,6 @@ nav {
     align-items   : center;
     padding-left  : 25px;
     background    : transparent;
-}
-
-.error {
-    border: 1px solid #db3138;
 }
 
 .contacts__block_form-phone {
