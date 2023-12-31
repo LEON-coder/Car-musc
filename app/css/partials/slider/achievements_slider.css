@@ -850,7 +850,7 @@ p.ism-badge a.ism-link:hover {
 
     .container {
         width     : 90%;
-        height    : 610px;
+        height    : auto;
         margin-top: 0;
     }
 
@@ -869,6 +869,10 @@ p.ism-badge a.ism-link:hover {
         justify-content: center;
         align-items    : center;
         position       : relative;
+    }
+
+    .achievements__slider-block_item {
+        width: 90%;
     }
 
     #my-slider {

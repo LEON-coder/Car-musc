@@ -1784,6 +1784,11 @@ footer {
         flex-direction: column;
     }
 
+    .advertisements-tuning__block {
+        width     : 90%;
+        margin-top: 0;
+    }
+
     .our_services__block_kind-of-services {
         flex-direction: column;
         align-items   : center;
@@ -1804,6 +1809,16 @@ footer {
     .our_services__block_service:nth-child(3),
     .our_services__block_service:nth-child(4) {
         margin-top: 40px;
+    }
+
+    .contacts {
+        display         : flex;
+        height          : auto;
+        width           : 100%;
+        justify-content : center;
+        align-items     : center;
+        background-color: #141414;
+        margin-top      : 60px;
     }
 }
 
@@ -2049,15 +2064,14 @@ footer {
     }
 
 
-
     .advertisements-tuning__guaranties {
         width          : 100%;
         height         : auto;
         display        : flex;
         flex-direction : column;
         justify-content: center;
-        margin-top     : 0px;
         align-items    : center;
+        margin-top     : 0;
     }
 
     .achievements__slider-block {
@@ -2185,11 +2199,12 @@ footer {
     }
 
     .advetrisements-tuning__guaranties_slider {
-        width        : 100%;
+        max-width    : 100%;
         margin-left  : 0;
         margin-top   : 50px;
         height       : auto;
         margin-bottom: 220px;
+        width        : 70%;
     }
 
 
@@ -2255,6 +2270,17 @@ footer {
         margin-top     : 0px;
     }
 
+    .our_works__block {
+        display        : flex;
+        width          : 100%;
+        height         : auto;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+        margin-top     : 100px;
+        margin-bottom  : 40px;
+    }
+
     .our_works__img {
         display   : flex;
         width     : 320px;
@@ -2303,12 +2329,15 @@ footer {
         height : auto;
     }
 
+    .contacts {
+        margin-top: 80px;
+        height    : 994px;
+    }
+
     .contacts__block__form {
-        display       : flex;
-        width         : 90%;
-        height        : 306px;
-        margin-top    : 130px;
-        flex-direction: column;
+        width     : 90%;
+        height    : auto;
+        margin-top: 130px;
     }
 
     .forms_name_and_phone {
@@ -2424,15 +2453,12 @@ footer {
 
 
     .block__contacts_and_address {
-        display        : flex;
         width          : 100%;
-        height         : 61px;
+        height         : auto;
         justify-content: center;
-        align-items    : center;
         margin-top     : 100px;
         flex-direction : column;
     }
-
 
     .footer__block_text {
         font-family   : 'ReformaGroteskDemiC';
@@ -2714,7 +2740,16 @@ footer {
         height        : auto;
     }
 
-
+    .achievements__slider {
+        display         : flex;
+        width           : 100%;
+        height          : auto;
+        justify-content : center;
+        align-items     : center;
+        position        : relative;
+        background-color: #141414;
+        margin-top      : 80px;
+    }
 
     .advertisements-tuning__guaranties {
         width          : 100%;
@@ -2921,6 +2956,7 @@ footer {
         flex-wrap      : wrap;
         justify-content: center;
         margin-top     : 0px;
+        height         : auto;
     }
 
     .our_works__img {
@@ -2965,21 +3001,15 @@ footer {
         align-items    : center;
     }
 
-    .contacts__block {
-        display        : flex;
-        width          : 90%;
-        height         : 494px;
-        justify-content: center;
-        align-items    : center;
-        flex-direction : column;
-    }
-
     .contacts__block__form {
         display       : flex;
         width         : 90%;
-        height        : 306px;
-        margin-top    : 130px;
+        margin-top    : 50px;
         flex-direction: column;
+    }
+
+    form {
+        height: auto;
     }
 
     .forms_name_and_phone {
@@ -2997,12 +3027,10 @@ footer {
     }
 
     .contacts__block_form-phone {
-        display     : flex;
         padding-left: 25px;
-        background  : transparent;
         margin-top  : 25px;
         margin-left : 0;
-        width       : 90%;
+        box-sizing  : border-box;
     }
 
     .form_questions {
@@ -3045,36 +3073,32 @@ footer {
 
     }
 
+    .contacts {
+        display         : flex;
+        width           : 100%;
+        justify-content : center;
+        align-items     : center;
+        background-color: #141414;
+        margin-top      : 0;
+    }
+
+    .contacts__block {
+        display        : flex;
+        width          : 100%;
+        height         : auto;
+        justify-content: flex-start;
+        align-items    : center;
+    }
+
     .contacts__block_header {
-        font-family   : ReformaGroteskDemiC;
-        font-style    : normal;
-        font-weight   : 600;
-        font-size     : 34px;
-        line-height   : 140%;
-        text-align    : center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color         : #fff;
-        margin-top    : -300px;
+        margin-top   : 0;
+        margin-bottom: 30px;
     }
 
     .contacts__block_form-name {
-        display       : flex;
-        font-family   : ReformaGroteskDemiC;
-        font-style    : normal;
-        font-weight   : 600;
-        font-size     : 16px;
-        line-height   : 140%;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color         : #898989;
-        border        : 1px solid #898989;
-        height        : 47px;
-        width         : 90%;
-        border-radius : 0;
-        align-items   : center;
-        padding-left  : 25px;
-        background    : transparent;
+        width       : 100%;
+        padding-left: 25px;
+        box-sizing  : border-box;
     }
 
     .form__block {
@@ -3111,12 +3135,23 @@ footer {
 
 
     .block__contacts_and_address {
-        display        : flex;
-        width          : 100%;
-        height         : 61px;
+        width     : 100%;
+        height    : auto;
+        margin-top: 40px;
+    }
+
+    footer {
+        width           : 100%;
+        display         : flex;
+        justify-content : center;
+        background-color: #141414;
+        box-sizing      : border-box;
+        margin-top      : 300px;
+    }
+
+    .footer__block {
         justify-content: center;
-        align-items    : center;
-        margin-top     : 100px;
+        height         : auto;
         flex-direction : column;
     }
 
