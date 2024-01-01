@@ -474,12 +474,24 @@
       <div class="contacts__block__form">
         <form class="form js-form" action="" method="post">
           <div class="forms_name_and_phone">
-            <input type="text" class="contacts__block_form-name js-input js-input-name" name="name" placeholder="ИМЯ">
-            <input type="text" class="contacts__block_form-phone js-input js-input-phone" name="phone"
-              placeholder="пример +7 123 456 789">
+            <div class="form-block">
+              <label class="notify" title="Всплывающа подсказка" for="name">Поле не заполнено</label>
+              <label class="notify-name" title="Всплывающа подсказка" for="name">Имя некорректное</label>
+              <input type="text" class="contacts__block_form-name js-input js-input-name" name="name" placeholder="ИМЯ">
+            </div>
+            <div class="form-block">
+              <label class="notify" title="Всплывающаz подсказка" for="name">Поле не заполнено</label>
+              <label class="notify-phone" title="Всплывающа подсказка" for="name">Введите корректный номер
+                телефона</label>
+              <input type="text" class="contacts__block_form-phone js-input js-input-phone" name="phone"
+                placeholder="пример +7 123 456 789">
+            </div>
+
           </div>
           <div class="form__block_questions">
-            <textarea class="form_questions js-input-textarea" name="text"
+            <label class="notify-text-area" title="Всплывающа подсказка" for="name">Напишите ваш вопрос или
+              пожелания</label>
+            <textarea class="form_questions js-input-textarea" name="textarea"
               placeholder="Вопрос по дизайну, тюнингу и др.">
             </textarea>
 

@@ -946,7 +946,7 @@ nav {
 
 .contacts__block_form-name {
     display       : flex;
-    font-family   : ReformaGroteskDemiC;
+    font-family   : 'ReformaGroteskDemiC';
     font-style    : normal;
     font-weight   : 600;
     font-size     : 16px;
@@ -955,12 +955,14 @@ nav {
     text-transform: uppercase;
     color         : #898989;
     border        : 1px solid #898989;
-    height        : 47px;
-    width         : 306px;
     border-radius : 0;
     align-items   : center;
     padding-left  : 25px;
     background    : transparent;
+    box-sizing    : border-box;
+    width         : 306px;
+    height        : 47px;
+    flex-shrink   : 0;
 }
 
 .contacts__block_form-phone {
@@ -974,17 +976,19 @@ nav {
     text-transform: uppercase;
     color         : #898989;
     border        : 1px solid #898989;
-    height        : 47px;
     width         : 306px;
+    height        : 47px;
     border-radius : 0;
-    margin-left   : 24px;
     align-items   : center;
     padding-left  : 25px;
     background    : transparent;
+    box-sizing    : border-box;
 }
 
 .forms_name_and_phone {
-    display: flex;
+    display        : flex;
+    justify-content: space-between;
+    width          : 100%;
 }
 
 .form__block {
@@ -996,10 +1000,11 @@ nav {
 
 .form__block_questions {
     display        : flex;
-    width          : 636px;
+    width          : 100%;
     height         : 150px;
     margin-top     : 24px;
     justify-content: space-between;
+    position       : relative;
 }
 
 .form_questions {
@@ -1019,6 +1024,15 @@ nav {
     padding-left  : 25px;
     background    : transparent;
     padding-bottom: 90px;
+}
+
+input:active {
+    background-color: transparent;
+}
+
+input,
+textarea {
+    outline: none;
 }
 
 .form_questions::-webkit-scrollbar-track {
@@ -1274,7 +1288,52 @@ footer {
     flex-grow      : 0;
 }
 
+.notify,
+.notify-name,
+.notify-phone {
+    display: none;
+}
 
+.name-notify-show {
+    display   : flex;
+    color     : red;
+    position  : absolute;
+    top       : -30px;
+    transition: 1s ease;
+    left      : 0px;
+}
+
+
+.notify-show,
+.phone-notify-show {
+    display   : flex;
+    color     : red;
+    position  : absolute;
+    top       : -30px;
+    transition: 1s ease;
+    left      : 0px;
+}
+
+.notify-text-area {
+    display: none;
+}
+
+.notify-text-area-show {
+    display   : flex;
+    color     : red;
+    position  : absolute;
+    top       : -22px;
+    transition: 1s ease;
+    left      : 0px;
+}
+
+.form-block {
+    display       : flex;
+    flex-direction: column;
+    width         : 306px;
+    flex-shrink   : 0;
+    position      : relative;
+}
 
 @media screen and (max-width: 1440px) {
     nav {
@@ -2359,11 +2418,8 @@ footer {
         width         : 100%;
     }
 
-    .form__block {
-        display        : flex;
-        width          : 90%;
-        justify-content: center;
-        flex-direction : column;
+    .form-block {
+        width: 100%;
     }
 
     .contacts__block_form-phone {
@@ -2374,9 +2430,20 @@ footer {
     }
 
     .form_questions {
-        width      : 90%;
-        padding-top: 15px;
-        box-sizing : border-box;
+        width       : 100%;
+        padding-top : 15px;
+        box-sizing  : border-box;
+        padding-left: 0;
+        margin-right: 20px;
+    }
+
+    .name-notify {
+        display: none;
+    }
+
+    .name-notify-show {
+        display: flex;
+        color  : red;
     }
 
     .address_and_e-mail {
@@ -3004,6 +3071,24 @@ footer {
         height: auto;
     }
 
+    .name-notify-show {
+        display   : flex;
+        color     : red;
+        position  : absolute;
+        top       : -30px;
+        transition: 1s ease;
+        left      : 0px;
+    }
+
+    .form-block {
+        display       : flex;
+        flex-direction: column;
+        width         : 100%;
+        flex-shrink   : 0;
+        position      : relative;
+        margin-bottom : 10px;
+    }
+
     .forms_name_and_phone {
         display       : flex;
         flex-wrap     : wrap;
@@ -3026,21 +3111,9 @@ footer {
     }
 
     .form_questions {
-        display       : flex;
-        font-family   : ReformaGroteskDemiC;
-        font-style    : normal;
-        font-weight   : 600;
-        font-size     : 16px;
-        line-height   : 140%;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color         : #898989;
-        width         : 90%;
-        border-radius : 0;
-        border        : 1px solid #898989;
-        padding-top   : 15px;
-        padding-left  : 25px;
-        box-sizing    : border-box;
+        width      : 90%;
+        padding-top: 15px;
+        box-sizing : border-box;
     }
 
     .address_and_e-mail {
