@@ -1021,6 +1021,16 @@ nav {
     padding-bottom: 90px;
 }
 
+.form_questions::-webkit-scrollbar-track {
+    width: 0;
+
+}
+
+.form_questions::-webkit-scrollbar-thumb {
+    width: 0;
+
+}
+
 .block__social_icons {
     display        : flex;
     flex-direction : column;
@@ -1062,6 +1072,7 @@ nav {
     padding-right  : 25px;
     background     : transparent;
     border         : none;
+    cursor         : pointer;
 }
 
 .submit:before {
@@ -1148,6 +1159,12 @@ nav {
     order         : 1;
     flex-grow     : 0;
 }
+
+.error {
+    border-color: red;
+}
+
+
 
 .number-phone {
     text-decoration: none;
@@ -2357,21 +2374,9 @@ footer {
     }
 
     .form_questions {
-        display       : flex;
-        font-family   : ReformaGroteskDemiC;
-        font-style    : normal;
-        font-weight   : 600;
-        font-size     : 16px;
-        line-height   : 140%;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color         : #898989;
-        width         : 90%;
-        border-radius : 0;
-        border        : 1px solid #898989;
-        padding-top   : 15px;
-        padding-left  : 25px;
-        box-sizing    : border-box;
+        width      : 90%;
+        padding-top: 15px;
+        box-sizing : border-box;
     }
 
     .address_and_e-mail {
