@@ -1017,13 +1017,15 @@ nav {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color         : #898989;
-    width         : 526px;
+    width         : 566px;
     border-radius : 0;
     border        : 1px solid #898989;
-    padding-top   : 0;
+    padding-top   : 20px;
     padding-left  : 25px;
     background    : transparent;
     padding-bottom: 90px;
+    box-sizing    : border-box;
+    text-align    : left;
 }
 
 input:active {
@@ -1303,9 +1305,17 @@ footer {
     left      : 0px;
 }
 
-
-.notify-show,
 .phone-notify-show {
+    display   : flex;
+    color     : red;
+    position  : relative;
+    top       : 0px;
+    transition: 1s ease;
+    left      : 0px;
+}
+
+
+.notify-show {
     display   : flex;
     color     : red;
     position  : absolute;
@@ -3072,12 +3082,12 @@ footer {
     }
 
     .name-notify-show {
-        display   : flex;
-        color     : red;
-        position  : absolute;
-        top       : -30px;
-        transition: 1s ease;
-        left      : 0px;
+        color        : red;
+        transition   : 1s ease;
+        left         : 0px;
+        position     : relative;
+        top          : 0;
+        margin-bottom: 10px;
     }
 
     .form-block {
@@ -3087,6 +3097,7 @@ footer {
         flex-shrink   : 0;
         position      : relative;
         margin-bottom : 10px;
+        height        : auto;
     }
 
     .forms_name_and_phone {
@@ -3105,15 +3116,17 @@ footer {
 
     .contacts__block_form-phone {
         padding-left: 25px;
-        margin-top  : 25px;
+        margin-top  : 10px;
         margin-left : 0;
         box-sizing  : border-box;
     }
 
     .form_questions {
-        width      : 90%;
-        padding-top: 15px;
-        box-sizing : border-box;
+        margin-top: 10px;
+    }
+
+    .block__social_icons {
+        margin-top: 10px;
     }
 
     .address_and_e-mail {
@@ -3161,9 +3174,14 @@ footer {
     }
 
     .contacts__block_form-name {
-        width       : 100%;
-        padding-left: 25px;
-        box-sizing  : border-box;
+        width             : 100%;
+        padding-left      : 25px;
+        box-sizing        : border-box;
+        transition        : .5s;
+        -webkit-transition: .5s;
+        -moz-transition   : .5s;
+        -ms-transition    : .5s;
+        -o-transition     : .5s;
     }
 
     .form__block {

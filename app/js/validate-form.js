@@ -26,15 +26,14 @@ function validatePhone(inputPhone) {
     let re = /^((\+7|7|8)+([0-9]){10})$/i;
     return re.test(String(inputPhone).toLowerCase());
 }
-function validateTextArea(inputTextArea) {
-    let re = /^[a-zA-Zа-яёА-ЯЁ]+$/u;
-    return re.test(String(inputTextArea).toLowerCase());
+/*
+function validatetextArea(inputTextArea) {
+    if (inputTextArea.value === '') {
+        inputTextArea.classList.add('error'),
+            notifyTextArea.classList.add('notify-text-area-show');
+    }
 }
-
-
-
-
-
+*/
 
 form.onsubmit = function () {
     let phoneVal = inputPhone.value,
@@ -52,10 +51,11 @@ form.onsubmit = function () {
         }
     });
 
-    if (emptyInputs.length !== 0) {
-        console.log('поля не заполнены');
-        return false;
-    }
+    /* if (emptyInputs.length !== 0) {
+         console.log('поля не заполнены');
+         return false;
+     }
+     */
 
     if (!validateName(nameVal)) {
         inputName.classList.add('error');
@@ -76,8 +76,7 @@ form.onsubmit = function () {
         inputPhone.classList.remove('error');
     }
 
-    if (!validateTextArea(textAreaVal)) {
-        console.log('Вы ничего не написали');
+    if (!validatetextArea(textAreaVal)) {
         inputTextArea.classList.add('error');
         notifyTextArea.classList.add('notify-text-area-show');
         return false;
