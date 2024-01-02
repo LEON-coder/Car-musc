@@ -38,8 +38,8 @@ function validatetextArea(inputTextArea) {
 form.onsubmit = function () {
     let phoneVal = inputPhone.value,
         nameVal = inputName.value,
-        textAreaVal = inputTextArea.value,
-        emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+        textAreaVal = inputTextArea.value;
+
 
     formInputs.forEach(function (input) {
         if (input.value === "") {
@@ -51,11 +51,6 @@ form.onsubmit = function () {
         }
     });
 
-    /* if (emptyInputs.length !== 0) {
-         console.log('поля не заполнены');
-         return false;
-     }
-     */
 
     if (!validateName(nameVal)) {
         inputName.classList.add('error');

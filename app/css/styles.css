@@ -1308,12 +1308,11 @@ footer {
 .phone-notify-show {
     display   : flex;
     color     : red;
-    position  : relative;
-    top       : 0px;
+    position  : absolute;
+    top       : -30px;
     transition: 1s ease;
     left      : 0px;
 }
-
 
 .notify-show {
     display   : flex;
@@ -1343,6 +1342,36 @@ footer {
     width         : 306px;
     flex-shrink   : 0;
     position      : relative;
+}
+
+.form-send-succesfull {
+    display        : flex;
+    position       : relative;
+    width          : 100%;
+    justify-content: center;
+}
+
+.form-send-succesfull__message {
+    display           : flex;
+    justify-content   : center;
+    align-self        : center;
+    color             : gold;
+    font-size         : 16pt;
+    transition        : 1s;
+    -webkit-transition: 1s;
+    -moz-transition   : 1s;
+    -ms-transition    : 1s;
+    -o-transition     : 1s;
+    margin-top        : 460px;
+}
+
+.back {
+    color          : red;
+    font-size      : 16pt;
+    text-decoration: none;
+    left           : 30px;
+    margin-top     : 30px;
+    position       : absolute;
 }
 
 @media screen and (max-width: 1440px) {
