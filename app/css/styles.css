@@ -2790,8 +2790,7 @@ footer {
     }
 
     #burger-menu {
-        display; flex;
-        position: fixed;
+        position: absolute;
         width: 40px;
         height: 3px;
         background: #DB3138;
