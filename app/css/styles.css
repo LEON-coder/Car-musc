@@ -66,6 +66,12 @@ nav {
 }
 
 .nav__list-link {
+    font-family: "ReformaGroteskMediumC", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-align: center;
     text-decoration: none;
     color: #fff;
 }
@@ -324,6 +330,7 @@ nav {
     width: 146.36px;
     height: 14.14px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .achievements__block-characteristic {
@@ -648,6 +655,11 @@ nav {
     align-self: center;
 }
 
+.tunung__guaranties_frame {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .our_services__block_links {
     display: flex;
     height: 75px;
@@ -952,7 +964,7 @@ nav {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 80px;
+    margin-top: 80px;
 }
 
 
@@ -1165,6 +1177,7 @@ textarea {
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-left: 10px;
 }
 
 .block__phone_and_e-mail {
@@ -1194,11 +1207,11 @@ textarea {
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-left: 10px;
 }
 
 .error {
     border-color: red;
-    display: none;
 }
 
 .number-phone {
@@ -1612,15 +1625,6 @@ footer {
         margin-top: 30px;
     }
 
-    .price_full-cover-car__table {
-        display: flex;
-        width: 100%;
-        height: 856px;
-        margin-top: 60px;
-        background-color: #141414;
-    }
-
-
     .table-body-style {
         display: flex;
         width: 100%;
@@ -1705,14 +1709,6 @@ footer {
         height: 34px;
         width: auto;
         margin-right: auto;
-    }
-
-    .price_full-cover-car__table {
-        display: flex;
-        width: 100%;
-        height: 856px;
-        margin-top: 60px;
-        background-color: #141414;
     }
 
     .table>tbody {
@@ -2235,6 +2231,7 @@ footer {
         width: 146.36px;
         height: 14.14px;
         margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .achievements__block-item {
@@ -2479,7 +2476,7 @@ footer {
 
     .our_works__block {
         margin-top: 100px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .our_works__img {
@@ -2525,21 +2522,21 @@ footer {
     }
 
     .contacts__block {
-        display: flex;
         width: 100%;
         height: auto;
+        padding-bottom: 0;
     }
 
     .contacts {
-        margin-top: 40px;
+        margin-top: 0;
         height: auto;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
     .contacts__block__form {
         width: 90%;
         height: auto;
-        margin-top: 130px;
+        margin-top: 0px;
     }
 
     .forms_name_and_phone {
@@ -2601,7 +2598,9 @@ footer {
 
     .contacts__block_header {
         font-size: 34px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+        padding-top: 0;
+        margin-top: 30px;
     }
 
     .contacts__block_form-name {
@@ -2646,7 +2645,7 @@ footer {
         width: 100%;
         height: auto;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 40px;
         flex-direction: column;
     }
 
@@ -2667,6 +2666,11 @@ footer {
     .footer__block_items {
         margin-top: 30px;
         flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
     }
 
     .footer__item {
@@ -2684,6 +2688,10 @@ footer {
         order: 0;
         flex-grow: 0;
         margin-top: 10px;
+    }
+
+    form {
+        padding-bottom: 0;
     }
 }
 
@@ -2903,6 +2911,7 @@ footer {
         width: 146.36px;
         height: 14.14px;
         margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .achievements__block-item {
@@ -3280,7 +3289,7 @@ footer {
         align-items: center;
         background-color: #141414;
         margin-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 40px;
     }
 
     .contacts__block {
