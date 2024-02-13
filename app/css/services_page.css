@@ -1,6 +1,6 @@
 .service-class {
   width: 636px;
-  height: 160px;
+  height: auto;
   font-family: 'ReformaGroteskBoldC';
   font-style: normal;
   font-weight: 700;
@@ -192,12 +192,12 @@
 
 .advertisements_tunung__block {
   display: flex;
-  align-items: center;
   position: relative;
   height: auto;
   width: 1296px;
   border-radius: 0;
   margin-top: 180px;
+  justify-content: space-between;
 }
 
 .advertisements_tunung__guaranties {
@@ -296,6 +296,10 @@
   align-items: center;
 }
 
+.advetrisements_tunung__guaranties_slider {
+  width: 636px;
+}
+
 .advetrisements_tunung__guaranties_slider-block--text {
   width: 422px;
   height: 50px;
@@ -324,14 +328,6 @@
 
 .advetrisements_tunung__slider--right {
   visibility: hidden;
-}
-
-.our_services {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: #141414;
 }
 
 .our_services__block {
@@ -936,11 +932,6 @@ tbody {
     height: auto;
   }
 
-  .our_services {
-    margin-top: 0;
-    margin-bottom: 0px;
-  }
-
   .price_full-cover-car__block {
     width: 1296px;
     height: auto;
@@ -987,7 +978,7 @@ tbody {
     font-family: ReformaGroteskDemiC;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 3vw;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.05em;
@@ -998,7 +989,7 @@ tbody {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 0;
     height: 34px;
     width: auto;
   }
@@ -1007,7 +998,7 @@ tbody {
     font-family: ReformaGroteskDemiC;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 3vw;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.05em;
@@ -1018,7 +1009,8 @@ tbody {
     justify-content: center;
     align-items: center;
     height: 68px;
-    margin-left: 50px;
+    margin-left: 20px;
+    width: 20%;
   }
 
   .margin-first {
@@ -1030,7 +1022,7 @@ tbody {
     font-family: ReformaGroteskDemiC;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 3vw;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.05em;
@@ -1089,10 +1081,10 @@ tbody {
 
 
   .table-style-header {
-    font-family: ReformaGroteskDemiC;
+    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 3vw;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.05em;
@@ -1109,10 +1101,10 @@ tbody {
   }
 
   .cell-style-brand {
-    font-family: ReformaGroteskDemiC;
+    font-family: 'ReformaGroteskDemiC';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 3vw;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.05em;
@@ -1173,6 +1165,7 @@ tbody {
     max-width: 636px;
     margin-top: 100px;
     width: 90%;
+    height: auto;
   }
 
   #slider_bl {
@@ -1436,15 +1429,6 @@ tbody {
     align-items: center;
     margin-top: 0;
     height: auto;
-  }
-
-  .our_services {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   .our_works__img {

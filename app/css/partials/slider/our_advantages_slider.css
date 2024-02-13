@@ -1,46 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 .our_advantages {
-  display         : flex;
-  width           : 100%;
-  height          : auto;
-  justify-content : center;
-  align-items     : center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
   background-color: #141414;
-  margin-top      : 0;
+  margin-top: 0;
 }
 
 
 .our_advantages_slider {
-  display       : flex;
-  height        : 660.7106933594px;
-  width         : 636px;
-  border-radius : 0;
-  margin-right  : 134px;
+  display: flex;
+  height: 660.7106933594px;
+  width: 636px;
+  border-radius: 0;
+  margin-right: 134px;
   flex-direction: column;
-  align-items   : center;
+  align-items: center;
 }
 
 .our_advantages__block {
-  display        : flex;
+  display: flex;
   justify-content: center;
-  margin-top     : 180px;
+  margin-top: 180px;
 }
 
 .slides {
-  padding : 0;
-  width   : 609px;
-  height  : 420px;
-  display : block;
+  padding: 0;
+  width: 609px;
+  height: 420px;
+  display: block;
   position: relative;
 }
 
 .slides * {
-  user-select          : none;
-  -ms-user-select      : none;
-  -moz-user-select     : none;
-  -khtml-user-select   : none;
-  -webkit-user-select  : none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
 
@@ -49,42 +49,42 @@
 }
 
 .slide-container {
-  display : block;
+  display: block;
   position: relative;
 }
 
 .slide {
-  top       : 0;
-  opacity   : 0;
-  width     : 609px;
-  height    : 551px;
-  display   : block;
-  position  : absolute;
-  transform : scale(0);
+  top: 0;
+  opacity: 0;
+  width: 609px;
+  height: 551px;
+  display: block;
+  position: absolute;
+  transform: scale(0);
   transition: all .7s ease-in-out;
 }
 
 .slide img {
-  width : 100%;
+  width: 100%;
   height: 100%;
 }
 
 .nav {
-  position       : absolute;
-  display        : flex;
+  position: absolute;
+  display: flex;
   justify-content: center;
-  width          : 100%;
-  top            : 600px;
+  width: 100%;
+  top: 600px;
 }
 
 .nav label {
-  width     : 70px;
-  height    : 70px;
-  display   : none;
-  position  : absolute;
-  opacity   : 0;
-  z-index   : 9;
-  cursor    : pointer;
+  width: 70px;
+  height: 70px;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
   text-align: center;
 }
 
@@ -94,35 +94,39 @@
 
 
 .nav .next {
-  right            : 0px;
+  right: 0px;
   background-repeat: no-repeat;
 }
 
 .nav .prev {
-  left             : 0px;
+  left: 0px;
   background-repeat: no-repeat;
 }
 
 .advetrisements_tunung__guaranties_slider-block--text {
-  width         : 422px;
-  height        : 50px;
-  font-family   : 'ReformaGroteskDemiC';
-  font-style    : normal;
-  font-weight   : 600;
-  font-size     : 18px;
-  line-height   : 140%;
-  text-align    : center;
+  width: 422px;
+  height: 50px;
+  font-family: 'ReformaGroteskDemiC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color         : #fff;
-  display       : block;
-  margin        : 10px auto;
+  color: #fff;
+  display: block;
+  margin: 10px auto;
+}
+
+.advetrisements_tunung__guaranties_slider {
+  width: 636px;
 }
 
 
 input:checked+.slide-container .slide {
-  opacity   : 1;
-  transform : scale(1);
+  opacity: 1;
+  transform: scale(1);
   transition: opacity 1s ease-in-out;
 }
 
@@ -131,22 +135,22 @@ input:checked+.slide-container .nav label {
 }
 
 .nav-dots {
-  width     : 100%;
-  bottom    : 9px;
-  height    : 11px;
-  position  : absolute;
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  position: absolute;
   text-align: center;
-  display   : none;
+  display: none;
 }
 
 .nav-dots .nav-dot {
-  top          : -5px;
-  width        : 11px;
-  height       : 11px;
-  margin       : 0 4px;
-  position     : relative;
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
   border-radius: 100%;
-  display      : inline-block;
+  display: inline-block;
 }
 
 .nav-dots .nav-dot:hover {
@@ -156,35 +160,35 @@ input:checked+.slide-container .nav label {
 
 @media screen and (max-width: 1024px) {
   .our_advantages_slider {
-    display       : flex;
-    height        : 660.7106933594px;
-    width         : 636px;
-    border-radius : 0;
-    margin-right  : 0;
+    display: flex;
+    height: 660.7106933594px;
+    width: 636px;
+    border-radius: 0;
+    margin-right: 0;
     flex-direction: column;
-    align-items   : center;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 640px) {
   .our_advantages_slider {
-    width       : 90%;
+    width: 90%;
     margin-right: 0;
   }
 
   .slides {
     padding: 0;
-    width  : 100%;
+    width: 100%;
   }
 
   .slide {
-    top       : 0;
-    opacity   : 0;
-    width     : 100%;
-    height    : 551px;
-    display   : block;
-    position  : absolute;
-    transform : scale(0);
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 551px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
     transition: all .7s ease-in-out;
   }
 }
@@ -195,62 +199,63 @@ input:checked+.slide-container .nav label {
 @media screen and (max-width: 450px) {
 
   .our_advantages__block {
-    display        : flex;
+    display: flex;
     justify-content: center;
-    margin-top     : 180px;
-    width          : 100%;
+    margin-top: 180px;
+    width: 100%;
   }
 
   .slides {
-    padding : 0;
-    width   : 90%;
-    height  : 420px;
-    display : block;
+    padding: 0;
+    width: 90%;
+    height: 420px;
+    display: block;
     position: relative;
   }
 
   .slide {
-    top       : 0;
-    opacity   : 0;
-    width     : 100%;
-    display   : block;
-    position  : absolute;
-    transform : scale(0);
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    transform: scale(0);
     transition: all .7s ease-in-out;
-    height    : auto;
+    height: auto;
   }
 
   .our_advantages_slider {
-    display       : flex;
-    height        : auto;
-    width         : 90%;
-    border-radius : 0;
-    margin-right  : 0;
+    display: flex;
+    height: auto;
+    width: 90%;
+    border-radius: 0;
+    margin-right: 0;
     flex-direction: column;
-    align-items   : center;
+    align-items: center;
   }
 
   .advetrisements_tunung__guaranties_slider-block--text {
     width: auto;
   }
 
+
   .nav {
-    position       : absolute;
-    top            : 250px;
-    display        : flex;
+    position: absolute;
+    top: 250px;
+    display: flex;
     justify-content: space-between;
-    width          : 100%;
+    width: 100%;
   }
 
   .nav .prev {
-    left             : 0px;
+    left: 0px;
     background-repeat: no-repeat;
-    top              : 130px;
+    top: 130px;
   }
 
   .nav .next {
-    right            : 0px;
+    right: 0px;
     background-repeat: no-repeat;
-    top              : 130px;
+    top: 130px;
   }
 }

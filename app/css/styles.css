@@ -1602,6 +1602,11 @@ footer {
         margin-top: 70px;
     }
 
+    .our_services {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
     .our_services__block_kind-of-services {
         display: flex;
         margin-top: 80px;
@@ -1674,20 +1679,6 @@ footer {
 
     .margin-first {
         margin-left: 120px;
-    }
-
-    .cell-style {
-        font-family: ReformaGroteskDemiC;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 140%;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #fff;
-        opacity: 0.6;
-        margin-left: auto;
     }
 
     .table-style-header {
@@ -1986,6 +1977,11 @@ footer {
     .advertisements-tuning__block {
         width: 90%;
         margin-top: 0;
+    }
+
+    .our_services {
+        margin-top: 0;
+        margin-bottom: 50px;
     }
 
     .our_services__block_kind-of-services {
