@@ -3140,8 +3140,7 @@ footer {
     }
 
     .our_works__pictures {
-        display: flex;
-        margin-top: 60px;
+        margin-top: 0px;
         justify-content: space-between;
         margin-bottom: 0px;
         align-items: center;
@@ -3159,7 +3158,7 @@ footer {
     }
 
     .margin--class {
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .our_services__block_service {
@@ -3196,14 +3195,12 @@ footer {
     }
 
     .contacts__block__form {
-        display: flex;
-        width: 90%;
-        margin-top: 50px;
-        flex-direction: column;
+        margin-top: 0;
     }
 
     form {
         height: auto;
+        padding-bottom: 0;
     }
 
     .name-notify-show {
@@ -3283,19 +3280,19 @@ footer {
         align-items: center;
         background-color: #141414;
         margin-top: 0;
+        padding-bottom: 0;
     }
 
     .contacts__block {
-        display: flex;
-        width: 100%;
-        height: auto;
         justify-content: flex-start;
         align-items: center;
+        padding-bottom: 0;
     }
 
     .contacts__block_header {
-        margin-top: 0;
-        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
     }
 
     .contacts__block_form-name {
@@ -3354,9 +3351,11 @@ footer {
     }
 
     .footer__block {
-        justify-content: center;
+        width: 100%;
         height: auto;
-        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
     }
 
 

@@ -854,16 +854,6 @@
   flex-grow: 0;
 }
 
-.footer__block {
-  display: flex;
-  justify-content: space-between;
-  width: 1296px;
-  height: 29px;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .footer__block_text {
   font-family: ReformaGroteskDemiC;
   font-style: normal;
@@ -990,10 +980,6 @@
     margin-top: 80px;
   }
 
-  .our_works__block {
-    margin-top: 80px;
-  }
-
   .price_full-cover-car__table {
     display: flex;
     width: 90%;
@@ -1076,23 +1062,12 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  .footer__block {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (max-width: 768px) {
 
   .header__describe-text {
-    width: 437px;
+    max-width: 437px;
     height: 96px;
     font-family: ReformaGroteskMediumC;
     font-style: normal;
@@ -1187,16 +1162,6 @@
     font-size: 52px;
     margin-top: 180px;
   }
-
-  .our_works__block {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 80px;
-  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1204,14 +1169,13 @@
   .service-class {
     width: auto;
     height: auto;
-    font-size: 52px;
+    font-size: 36px;
   }
 
   .price_full-cover-car__table {
-    width: 90%;
     height: auto;
-    justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
 
   .table {
@@ -1226,7 +1190,7 @@
 
   .price_full-cover-car__header {
     max-width: 636px;
-    margin-top: 180px;
+    margin-top: 100px;
     width: 90%;
   }
 
@@ -1246,6 +1210,47 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #fff;
+  }
+
+  .advertisements_tunung__guaranties {
+    max-width: 526px;
+    height: 662px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .tunung__guaranties {
+    max-width: 526px;
+    height: auto;
+    width: 100%;
+  }
+
+  .tunung__guaranties_header {
+    max-width: 526px;
+    height: auto;
+    width: 90%;
+  }
+
+  .tunung__guaranties_header-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 526px;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .frame-position {
+    margin-left: calc(40px);
+    margin-bottom: 0;
+  }
+
+  .tunung__guaranties_describe {
+    max-width: 526px;
+    height: auto;
+    width: 80%;
   }
 }
 
@@ -1407,36 +1412,26 @@
     margin-left: auto;
   }
 
+
+
   .tunung__guaranties_header {
     width: auto;
     height: auto;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
   }
 
   .tunung__guaranties_header-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    flex-direction: column;
-  }
-
-  .tunung__guaranties {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    height: auto;
+    width: 80%;
   }
 
   .advertisements_tunung__guaranties {
-    width: 100%;
-    height: auto;
+    max-width: 526px;
+    height: 662px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    width: 90vw;
   }
 
 
