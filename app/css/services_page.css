@@ -1171,7 +1171,11 @@ tbody {
   #slider_bl {
     width: 90%;
   }
-
+  
+.advetrisements_tunung__guaranties_slider {
+  max-width: 636px;
+  width: 100%;
+}
   .advetrisements_tunung__guaranties_slider-block--text {
     width: 60vw;
     height: auto;
@@ -1408,7 +1412,10 @@ tbody {
     width: 90%;
     height: auto;
   }
-
+.advetrisements_tunung__guaranties_slider {
+  max-width: 636px;
+  with: 90%;
+}
   .width--service {
     width: 90%;
     font-family: ReformaGroteskDemiC;
