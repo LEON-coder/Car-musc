@@ -297,7 +297,7 @@
 }
 
 .advetrisements_tunung__guaranties_slider {
-  width: 636px;
+  max-width: 636px;
 }
 
 .advetrisements_tunung__guaranties_slider-block--text {
