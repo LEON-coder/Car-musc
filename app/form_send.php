@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>succesfull page</title>
-	<link rel="stylesheet" href="../app/css/styles.css">
-</head>
-
-<body>
-	<div class="form-send-succesfull">
-		<a class="back" href="/index.html">назад</a>
-		<span class="form-send-succesfull__message"> Сообщение успешно отправлено !</span>
-	</div>
-
-	<?php
+<?php
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -30,7 +14,3 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указыва
 mail($to, $tema, $message, "Сайт Car Musc"); //отправляет получателю на емайл значения переменных
 
 ?>
-
-</body>
-
-</html>
